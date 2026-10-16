@@ -1,0 +1,23 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+*.log
+
+# Node (if you add build tools later)
+node_modules/
+package-lock.json
+
+# Converted images (never commit these)
+*.webp
+*.avif
