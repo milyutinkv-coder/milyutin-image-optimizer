@@ -1,0 +1,116 @@
+.mio-wrap h1 {
+    margin-bottom: 18px;
+}
+
+.mio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.mio-card {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 6px;
+    padding: 20px 22px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.04);
+}
+
+.mio-card h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+
+.mio-muted {
+    color: #666;
+    font-size: 12px;
+}
+
+.mio-fieldset {
+    margin: 14px 0;
+    padding: 12px 14px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    background: #fafafa;
+}
+
+.mio-fieldset legend {
+    padding: 0 6px;
+    font-weight: 600;
+}
+
+.mio-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.mio-progress {
+    height: 12px;
+    background: #e5e5e5;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 12px 0 6px;
+}
+
+.mio-progress-bar {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #2271b1, #46b450);
+    transition: width .3s ease;
+}
+
+.mio-status {
+    font-size: 13px;
+    color: #444;
+    min-height: 18px;
+}
+
+.mio-stats {
+    margin: 6px 0 14px;
+    padding: 0;
+    list-style: none;
+}
+
+.mio-stats li {
+    padding: 3px 0;
+    font-size: 13px;
+}
+
+.mio-log {
+    max-height: 220px;
+    overflow-y: auto;
+    background: #f6f7f7;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 12px;
+    line-height: 1.55;
+    color: #333;
+}
+
+.mio-log div + div {
+    border-top: 1px dashed #e0e0e0;
+    padding-top: 4px;
+    margin-top: 4px;
+}
+
+.mio-card--brand {
+    background: linear-gradient(135deg, #f0f6fc, #ffffff);
+    border-color: #c8d9ee;
+}
+
+.mio-card--brand a {
+    color: #2271b1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.mio-card--brand a:hover {
+    text-decoration: underline;
+}
