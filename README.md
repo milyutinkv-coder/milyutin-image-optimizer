@@ -26,16 +26,29 @@
 
 ## 🚀 Installation
 
-### From GitHub
+1. Upload the `milyutin-image-optimizer` folder to `wp-content/plugins/` (or upload a ZIP file via **Plugins → Add New → Upload Plugin**).
+2. Activate the plugin.
+3. Go to **Milyutin Image Opt.** in the admin menu to configure formats, quality, and run bulk conversion.
 
-1. Download the latest release ZIP.
-2. Go to **WordPress Admin → Plugins → Add New → Upload Plugin**.
-3. Upload the ZIP and click **Install Now**.
-4. Activate the plugin.
-5. Go to **Milyutin Image Opt.** in the admin menu to configure.
+## 📂 File Structure
 
-### Manual
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/milyutinkv-coder/milyutin-image-optimizer.git
+```text
+milyutin-image-optimizer/
+├── assets/
+│   ├── css/admin.css
+│   └── js/admin.js
+├── includes/
+│   ├── class-mio-bulk.php
+│   ├── class-mio-converter.php
+│   ├── class-mio-frontend.php
+│   ├── class-mio-logger.php
+│   └── class-mio-settings.php
+├── milyutin-image-optimizer.php
+└── uninstall.php
+```
+❓ FAQ
+Question	Answer
+Does it modify my original images?	No. The plugin only creates new .webp / .avif files next to the originals. Originals stay untouched.
+What if my server doesn't support WebP or AVIF?	The plugin detects server support and shows a warning in the admin panel. Unsupported formats are simply skipped.
+Can I use it with a CDN?	Yes. Since files are created on disk next to the originals, any CDN will pick them up automatically.
+How do I revert changes?	Deactivate the plugin. Your original JPG/PNG files remain intact.
